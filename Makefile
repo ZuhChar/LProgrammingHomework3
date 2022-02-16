@@ -22,13 +22,13 @@ tidy:
 
 prompt.o: prompt.c prompt.h
 	echo "Testing output"
-	CC prompt.c prompt.h -o prompt.o
+	cc -c prompt.c prompt.h -o prompt.o
 
 compute.o: compute.c compute.h
-	CC -c compute.c compute.h -o compute.o
+	cc -c compute.c compute.h -o compute.o
 
 display.o: display.c display.h
-	CC display.c display.h -o display.o
+	cc -c display.c display.h -o display.o
 
 first_test: approxe.c
 	g approxe.c -o first_test
