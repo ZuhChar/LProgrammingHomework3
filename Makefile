@@ -9,7 +9,7 @@
 # 
 ##################################
 
-CC=gcc
+CC=cc
 CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
 # .PHONY=all clean tidy
