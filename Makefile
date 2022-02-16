@@ -12,16 +12,15 @@
 CC=cc
 CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
-# .PHONY=all clean tidy
+.PHONY= clean tidy
 
 tidy:
 	${RM} a.out core.*
 
-# clean:
-#	${RM} #Fill in later
+clean:
+	${RM} prompt compute display
 
 prompt: prompt.c prompt.h
-	echo "Testing output"
 	cc -c prompt.c prompt.h -o prompt
 
 compute: compute.c compute.h
