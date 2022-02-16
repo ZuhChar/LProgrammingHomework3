@@ -21,13 +21,13 @@ clean:
 	${RM} prompt compute display
 
 prompt.o: prompt.c prompt.h
-	cc -c prompt.c prompt.h -o prompt.o
+	cc -c prompt.c 
 
 compute.o: compute.c compute.h
-	cc -c compute.c compute.h -o compute.o
+	cc -c compute.c 
 
 display.o: display.c display.h
-	cc -c display.c display.h -o display.o
+	cc -c display.c 
 
 first_test: approxe.c
 	g approxe.c -o first_test
