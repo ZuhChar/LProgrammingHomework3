@@ -21,6 +21,7 @@ tidy:
 #	${RM} #Fill in later
 
 prompt.o: prompt.c prompt.h
+	echo "Testing output"
 	CC prompt.c prompt.h -o prompt.o
 
 compute.o: compute.c compute.h
