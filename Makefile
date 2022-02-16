@@ -16,10 +16,6 @@ OBJS := $(wildcard *.o)
 
 approxe: approxe.c prompt.o compute.o display.o
 
-
-clean:
-	${RM} prompt compute display
-
 prompt.o: prompt.c prompt.h
 	cc -c prompt.c 
 
@@ -34,3 +30,6 @@ first_test: approxe.c
 
 tidy:
 	${RM} a.out core.*
+
+clean:
+	${RM} prompt compute display
