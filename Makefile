@@ -14,9 +14,6 @@ CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
 .PHONY= clean tidy
 
-tidy:
-	${RM} a.out core.*
-
 approxe: approxe.c prompt.o compute.o display.o
 
 
@@ -34,3 +31,6 @@ display.o: display.c display.h
 
 first_test: approxe.c
 	g approxe.c -o first_test
+
+tidy:
+	${RM} a.out core.*
