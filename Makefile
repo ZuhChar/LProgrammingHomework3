@@ -20,15 +20,15 @@ tidy:
 # clean:
 #	${RM} #Fill in later
 
-prompt.o: prompt.c prompt.h
+prompt: prompt.c prompt.h
 	echo "Testing output"
-	cc -c prompt.c prompt.h -o prompt.o
+	cc -c prompt.c prompt.h -o prompt
 
-compute.o: compute.c compute.h
-	cc -c compute.c compute.h -o compute.o
+compute: compute.c compute.h
+	cc -c compute.c compute.h -o compute
 
-display.o: display.c display.h
-	cc -c display.c display.h -o display.o
+display: display.c display.h
+	cc -c display.c display.h -o display
 
 first_test: approxe.c
 	g approxe.c -o first_test
