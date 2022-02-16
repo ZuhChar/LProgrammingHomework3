@@ -17,17 +17,20 @@ OBJS := $(wildcard *.o)
 tidy:
 	${RM} a.out core.*
 
+approxe: approxe.c prompt.o compute.o display.o
+
+
 clean:
 	${RM} prompt compute display
 
-prompt: prompt.c prompt.h
-	cc -c prompt.c prompt.h -o prompt
+prompt.o: prompt.c prompt.h
+	cc -c prompt.c prompt.h -o prompt.o
 
-compute: compute.c compute.h
-	cc -c compute.c compute.h -o compute
+compute.o: compute.c compute.h
+	cc -c compute.c compute.h -o compute.o
 
-display: display.c display.h
-	cc -c display.c display.h -o display
+display.o: display.c display.h
+	cc -c display.c display.h -o display.o
 
 first_test: approxe.c
 	g approxe.c -o first_test
