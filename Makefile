@@ -30,5 +30,8 @@ display.o:
 tidy:
 	${RM} a.out core.* OBJS
 
-clean: tidy
-	${RM} prompt.o compute.o display.o
+clean:
+    for file in *.o ; do \
+        if [ -e "$file" ]; then \
+            rm "$$file" || exit 1; \
+    done
