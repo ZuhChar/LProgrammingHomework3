@@ -15,16 +15,16 @@ OBJS := $(wildcard *.o)
 .PHONY= prompt.o compute.o display.o approxe tidy clean
 
 prompt.o: 
-	cc -c prompt.c 
+	gcc -c prompt.c 
 
 compute.o: 
-	cc -c compute.c 
+	gcc -c compute.c 
 
 display.o: 
-	cc -c display.c 
+	gcc -c display.c 
 
 approxe: approxe.c prompt.o compute.o display.o
-	touch approxe
+	gcc approxe.c
 
 tidy:
 	/bin/rm -f a.out core.* OBJS
