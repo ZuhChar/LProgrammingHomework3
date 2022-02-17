@@ -3,10 +3,10 @@
 # Zachary Crimmel
 # COSC 3750 Spring
 # Homework 3
-# 15 February 2022
+# February 16, 2022
 #
 # This file will be able to take an input of variable amounts of different files and compile them if a change has been made to them
-# 
+# Collaborated with Ian Moon on this Assignment
 ##################################
 
 CC=cc
@@ -18,17 +18,17 @@ RM=rm -f
 
 approxe: approxe.c prompt.o compute.o display.o
 
-prompt.o: 
+prompt.o: prompt.c prompt.h
 	cc -c prompt.c
 
-compute.o: 
+compute.o: compute.c compute.h
 	cc -c compute.c 
 
-display.o: 
+display.o: display.c display.h
 	cc -c display.c 
 
 tidy:
 	${RM} a.out core.* OBJS
 
 clean:
-	rm -f prompt.o compute.o display.o
+	${RM} OBJS approxe
