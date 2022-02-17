@@ -19,13 +19,13 @@ RM=/bin/rm -f
 approxe: approxe.c prompt.o compute.o display.o
 
 prompt.o: 
-	${CC} ${CFLAGS} prompt.c -o prompt.o
+	cc -c prompt.c
 
 compute.o: 
-	${CC} ${CFLAGS} compute.c -o compute.o
+	cc -c compute.c 
 
 display.o: 
-	${CC} ${CFLAGS} display.c -o display.o
+	cc -c display.c 
 
 tidy:
 	${RM} a.out core.* OBJS
