@@ -12,7 +12,7 @@
 CC=cc
 CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
-RM=/bin/rm -f
+RM=rm -f
 
 .PHONY= approxe clean tidy
 
