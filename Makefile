@@ -15,7 +15,6 @@ OBJS := $(wildcard *.o)
 .PHONY= clean tidy
 
 prompt.o: prompt.c prompt.h
-	cc -c prompt.h
 	cc -c prompt.c 
 
 compute.o: compute.c compute.h
