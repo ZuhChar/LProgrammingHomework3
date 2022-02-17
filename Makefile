@@ -15,7 +15,7 @@ OBJS := $(wildcard *.o)
 .PHONY= prompt.o compute.o display.o approxe tidy clean
 
 prompt.o: 
-	gcc -c prompt.c 
+	gcc -c -o prompt.c 
 
 compute.o: 
 	gcc -c compute.c 
