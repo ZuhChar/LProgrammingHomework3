@@ -7,7 +7,7 @@
  * of the constant e.
  ***************************/
 
-#include<compute.h>
+#include "compute.h"
 
 double  compute(int maxN) {
   int  n=0;

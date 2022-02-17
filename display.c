@@ -8,7 +8,7 @@
  ***************************/
 
 
-#include<display.h>
+#include "display.h"
 
 void  display(double e) {
   printf("The series sum approximation of e is %0.15f \n",e);
