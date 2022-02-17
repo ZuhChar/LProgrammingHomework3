@@ -26,6 +26,7 @@ display.o:
 	cc -c display.c 
 
 tidy:
-	/bin/rm -f a.out core.* OBJS
+	${RM} -f a.out core.* OBJS
 
 clean: tidy
+	${RM} prompt.o compute.o display.o
