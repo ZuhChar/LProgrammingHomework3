@@ -6,7 +6,7 @@
 // Function prompts for an integer to used to compute an approximation of 
 // the constant e.
 
-#include<prompt.h>
+#include "prompt.h"
 
 int  prompt(void) 
 {
