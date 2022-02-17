@@ -28,7 +28,7 @@ display.o: display.c display.h
 	cc -c display.c 
 
 tidy:
-	${RM} a.out core.* OBJS
+	${RM} a.out core.* ${OBJS}
 
 clean:
-	${RM} OBJS approxe
+	${RM} ${OBJS} approxe
