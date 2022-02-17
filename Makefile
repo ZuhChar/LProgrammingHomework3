@@ -12,7 +12,7 @@
 CC=cc
 CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
-.PHONY= approxe tidy clean
+.PHONY: approxe clean tidy
 
 approxe: approxe.c prompt.o compute.o display.o
 
