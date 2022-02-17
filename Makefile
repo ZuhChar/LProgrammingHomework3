@@ -30,5 +30,5 @@ display.o:
 tidy:
 	${RM} a.out core.* OBJS
 
-clean: tidy
-	${RM} prompt.o compute.o display.o
+clean:
+	rm -f prompt.o compute.o display.o
