@@ -14,13 +14,13 @@ CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
 .PHONY= prompt.o compute.o display.o approxe tidy clean
 
-prompt.o: prompt.c prompt.h
+prompt.o: 
 	cc -c prompt.c 
 
-compute.o: compute.c compute.h
+compute.o: 
 	cc -c compute.c 
 
-display.o: display.c display.h
+display.o: 
 	cc -c display.c 
 
 approxe: approxe.c prompt.o compute.o display.o
