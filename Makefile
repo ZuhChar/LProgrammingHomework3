@@ -27,7 +27,6 @@ approxe: approxe.c prompt.o compute.o display.o
 	touch approxe
 
 tidy:
-	${RM} a.out core.*
+	/bin/rm -f a.out core.* OBJS
 
-clean:
-	${RM} prompt compute display
+clean: tidy
