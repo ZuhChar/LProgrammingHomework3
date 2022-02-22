@@ -9,7 +9,7 @@
 # Collaborated with Ian Moon on this Assignment
 ##################################
 
-CC=cc
+CC=gcc
 CFLAGS=-Wall -ggdb
 OBJS := $(wildcard *.o)
 RM=rm -f
@@ -19,6 +19,7 @@ RM=rm -f
 
 #Creates the executable
 approxe: approxe.c prompt.o compute.o display.o
+	$(CC) $(CFLAGS) approxe.c $(OBJS) -o approxe
 
 #Compiles prompt.c
 prompt.o: prompt.c prompt.h
